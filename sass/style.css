@@ -1,4 +1,15 @@
 /*---------------------- declare variable ------------------*/
-.navbar {
+.navbar, footer {
   background-color: #022C43 !important;
+}
+
+.underline {
+  width: 300px;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.button .btn {
+  min-width: 45%;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */
