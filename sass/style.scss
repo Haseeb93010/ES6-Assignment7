@@ -1,15 +1,19 @@
-/*---------------------- declare variable ------------------*/ 
+/*---------------------- declare variable ------------------*/
 $primaryColor : #022C43;
 
-.navbar,footer,.bg{
+.navbar,
+footer,
+.bg {
     background-color: $primaryColor !important;
 }
-.underline{
+
+.underline {
     width: 300px;
     border: 1px solid green;
     border-radius: 10px;
 }
-.button .btn {
+
+.buttons .btn{
+    margin-top: 5px;
     min-width: 45%;
-    margin-bottom: 5px;
-  }
+}

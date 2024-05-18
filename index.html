@@ -46,55 +46,57 @@
       </div>
     </div>
     <!-------------------------- section 2 --------------------------->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <h4 class="text-center">Input</h4>
-          <div class="border border-black rounded px-3 h-100 d-flex justify-content-center align-items-center">
-            <div class="input-group">
-            <input type="datetime-local" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-              aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
-          </div>
-          </div>
-          
-        </div>
-        <div class="col-12 col-sm-6">
-          <h4 class="text-center">Current Date and Time</h4>
-          <div class="bg border border-black rounded h-100 d-flex justify-content-center align-items-center text-white background" id="original">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!------------------------------- section 3 ----------------------------------->
     <div class="container mt-3 mt-sm-5">
       <div class="row">
-          <div class="col-12 col-sm-6">
-              <h4 class="text-center pt-5">Buttons</h4>
-              <div class="border border-black rounded p-3 button text-center">
-                  <button class="btn btn-danger" onclick="getDayName();">Get Name Of Today</button>
-                  <button class="btn btn-danger" onclick="">Calculate Days Passed Since I Born</button>
-                  <button class="btn btn-danger" onclick="">when is your next birthday</button>
-                  <button class="btn btn-danger" onclick="">Greet User</button>
-                  <button class="btn btn-danger" onclick="">Tell Time 1</button>
-                  <button class="btn btn-danger" onclick="">Tell Time 2</button>
-                  <button class="btn btn-danger" onclick="">Tell Time 3</button>
-                  <button class="btn btn-danger" onclick="">Calculate Tax</button>
-                  <button class="btn btn-danger" onclick="">Calculate Total = price + tax</button>
+          <div class="col-12 col-sm-6 mb-5 mb-sm-0">
+              <h4 class="text-center">Input</h4>
+              <div
+                  class="border border-black rounded px-3 h-100 d-flex justify-content-center align-items-center">
+                  <div class="input-group">
+                      <input type="datetime-local" class="form-control" placeholder="Recipient's username"
+                          aria-label="Recipient's username" aria-describedby="button-addon2" id="inputValue">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
+                  </div>
               </div>
           </div>
           <div class="col-12 col-sm-6">
-              <h4 class="text-center pt-5">Output / Result</h4>
-              <div class="border border-black rounded p-3 button text-center" id="output" style="height: 249px;">
-              </div>
-              <div class="mt-4 text-center">
-                  <button class="btn btn-outline-dark" onclick="clearOutput()">Clear Output</button>
+              <h4 class="text-center">Original Number</h4>
+              <div class="rounded h-100 d-flex justify-content-center align-items-center text-white bg"
+                  id="original">
               </div>
           </div>
       </div>
   </div>
+
+    <!------------------------------- section 3 ----------------------------------->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <h4 class="text-center pt-5">Buttons</h4>
+          <div class="border border-black rounded p-3 buttons text-center">
+            <button class="btn btn-danger" onclick="getDayName();">Get Name Today</button>
+            <button class="btn btn-danger" onclick="calculateDays()">Calculate Days when i born</button>
+            <button class="btn btn-danger" onclick="nextBirthday()">when is your next birthday</button>
+            <button class="btn btn-danger" onclick="">Greet User</button>
+            <button class="btn btn-danger" onclick="">Tell Time 1</button>
+            <button class="btn btn-danger" onclick="">Tell Time 2</button>
+            <button class="btn btn-danger" onclick="">Tell Time 3</button>
+            <button class="btn btn-danger" onclick="">Calculate Tax</button>
+            <button class="btn btn-danger" onclick="">Calculate Total = price + tax</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <h4 class="text-center pt-5">Output / Result</h4>
+          <div class="border border-black rounded p-3 button text-center" id="output" style="height: 249px;">
+          </div>
+          <div class="mt-4 text-center">
+            <button class="btn btn-outline-dark" onclick="clearOutput()">Clear Output</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer class="py-2 mt-2 mt-sm-0">
+  <footer class="py-2">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -106,8 +108,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <!-- custom js -->
-    <script src="javascript/script.js"></script>
+  <!-- custom js -->
+  <script src="javascript/script.js"></script>
 </body>
 
 </html>
