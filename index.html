@@ -50,15 +50,18 @@
       <div class="row">
         <div class="col-12 col-sm-6">
           <h4 class="text-center">Input</h4>
-          <div class="input-group mb-3 border border-black rounded p-4">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+          <div class="border border-black rounded px-3 h-100 d-flex justify-content-center align-items-center">
+            <div class="input-group">
+            <input type="datetime-local" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
               aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
           </div>
+          </div>
+          
         </div>
         <div class="col-12 col-sm-6">
           <h4 class="text-center">Current Date and Time</h4>
-          <div class="bg text-center p-4 border border-black rounded" id="original">
+          <div class="bg border border-black rounded h-100 d-flex justify-content-center align-items-center text-white background" id="original">
           </div>
         </div>
       </div>
@@ -69,15 +72,15 @@
           <div class="col-12 col-sm-6">
               <h4 class="text-center pt-5">Buttons</h4>
               <div class="border border-black rounded p-3 button text-center">
-                  <button class="btn btn-danger" onclick="">Get Name Of Today</button>
-                  <button class="btn btn-danger" onclick="">Ceil A Number</button>
-                  <button class="btn btn-danger" onclick="">Floor A Number</button>
-                  <button class="btn btn-danger" onclick="">Generate A Random Number</button>
-                  <button class="btn btn-danger" onclick="">Throw A Dice</button>
-                  <button class="btn btn-danger" onclick="">Generate A Strong Password</button>
-                  <button class="btn btn-danger" onclick="">Converting Strings</button>
-                  <button class="btn btn-danger" onclick="">Controlling Length</button>
-                  <button class="btn btn-danger" onclick="">Calculate GST</button>
+                  <button class="btn btn-danger" onclick="getDayName();">Get Name Of Today</button>
+                  <button class="btn btn-danger" onclick="">Calculate Days Passed Since I Born</button>
+                  <button class="btn btn-danger" onclick="">when is your next birthday</button>
+                  <button class="btn btn-danger" onclick="">Greet User</button>
+                  <button class="btn btn-danger" onclick="">Tell Time 1</button>
+                  <button class="btn btn-danger" onclick="">Tell Time 2</button>
+                  <button class="btn btn-danger" onclick="">Tell Time 3</button>
+                  <button class="btn btn-danger" onclick="">Calculate Tax</button>
+                  <button class="btn btn-danger" onclick="">Calculate Total = price + tax</button>
               </div>
           </div>
           <div class="col-12 col-sm-6">
@@ -95,7 +98,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="mb-0 text-center text-white">&copy; <span id="year"></span>.All Rights Reserved.</p>
+          <p class="mb-0 text-center text-white">&copy; <span id="year"></span>. All Rights Reserved.</p>
         </div>
       </div>
     </div>
