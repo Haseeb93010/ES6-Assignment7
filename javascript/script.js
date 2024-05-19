@@ -141,10 +141,44 @@ const tellTime_3 = () => {
     showOutput(html);
 }
 
+/*--------------------------------- Calculate Tax -----------------------------*/ 
 
+function calculatTaxBtn(){
 
+    var price = +prompt("Enter price");
 
+    var taxRate = 17;
 
+    var tax = price * (taxRate/100);
 
+    let html = "Tax: " + tax;
+    
+    showOutput(html)
+}
 
+function calculateTotal(price){
+
+    if(price > 1000){
+        var taxRate = 17;
+    }else{
+        var taxRate = 8;
+    }
+    var tax = price * (taxRate/100);
+
+    var total = price + tax;
+
+    return total;
+}
+
+function calculateTotalBtn(){
+
+    var price = +prompt("Enter price");
+
+    var total = calculateTotal(price);
+
+    let html = "Total: " + total
+
+    showOutput(html)
+
+}
 
