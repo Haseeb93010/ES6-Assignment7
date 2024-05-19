@@ -2,46 +2,45 @@ let now = new Date();
 
 let year = now.getFullYear();
 
-// --------------------------- current date and time
+/*--------------------------- current date and time ------------------------------------*/
 
 document.getElementById("original").innerHTML = `<p class="mb-0">${now}</p>`;
 
-// --------------------------- current year for footer
+/*--------------------------- current footer year ------------------------------------*/
 
 document.getElementById("year").innerHTML = year;
 
-// --------------------------- clear output
+/*--------------------------- clear output function ------------------------------------*/
 
 const clearOutput = () => {
     document.getElementById("output").innerHTML = "";
 }
 
-// --------------------------- show Output function
+/*--------------------------- show output function ------------------------------------*/
 
 const showOutput = (output) => {
     return document.getElementById("output").innerHTML = output
 }
 
-// -------------------------- function for get input value
+/*--------------------------- getInputValue Function ------------------------------------*/
 
 const getInputValue = () => {
     return document.getElementById("inputValue").value;
 }
 
-// --------------------------- get name of today
-
+/*--------------------------- getDayName function ------------------------------------*/
 const getDayName = () => {
     let now = new Date();
-
+    
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+    
     let dayName = days[now.getDay()];
-
+    
     showOutput(dayName);
 
 }
 
-// ------------------------- calculate days since i born
+/*--------------------------- Calculate days when i born function ----------------------*/
 
 const calculateDays = () => {
     let dob = getInputValue();
@@ -64,10 +63,10 @@ const calculateDays = () => {
 
     let html = `<span style ="color:green; font-size:20px">${daysDiff}</span> days has been passed since you born.`
 
-    showOutput(html)
+    showOutput(html);
 }
 
-//  --------------------------------- when is your next birth day
+/*-------------------------------- When is your next BirthDay -----------------------------*/ 
 
 const nextBirthday = () => {
     let dob = getInputValue();
@@ -90,8 +89,42 @@ const nextBirthday = () => {
 
     let html = `Your next birth day is <span style ="color:green; font-size:20px">${daysDiff}</span> days away.`
 
-    showOutput(html)
+    showOutput(html);
 
+}
+
+/*-------------------------------- Tell Time 1 Funtion ------------------------------*/ 
+
+const tellTime_1 = () =>{
+    let now = new Date();
+
+    let time = now.toLocaleTimeString()
+
+    let html = `<span style="color:green;">${time}</span>`;
+
+    showOutput(html);
+}
+/*-------------------------------- Tell Time 2 Funtion ------------------------------*/ 
+
+const tellTime_2 = () =>{
+    let now = new Date();
+
+    let time = now.toLocaleTimeString()
+
+    let html = `<span style="color:green;">${time}</span>`;
+
+    showOutput(html);
+}
+/*-------------------------------- Tell Time 3 Funtion ------------------------------*/ 
+
+const tellTime_3 = () =>{
+    let now = new Date();
+
+    let time = now.toLocaleTimeString()
+
+    let html = `<span style="color:green;">${time}</span>`;
+
+    showOutput(html);
 }
 
 
