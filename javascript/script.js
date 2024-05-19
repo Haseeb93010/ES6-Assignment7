@@ -31,11 +31,11 @@ const getInputValue = () => {
 /*--------------------------- getDayName function ------------------------------------*/
 const getDayName = () => {
     let now = new Date();
-    
+
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
+
     let dayName = days[now.getDay()];
-    
+
     showOutput(dayName);
 
 }
@@ -66,7 +66,7 @@ const calculateDays = () => {
     showOutput(html);
 }
 
-/*-------------------------------- When is your next BirthDay -----------------------------*/ 
+/*-------------------------------- When is your next BirthDay -----------------------------*/
 
 const nextBirthday = () => {
     let dob = getInputValue();
@@ -93,9 +93,23 @@ const nextBirthday = () => {
 
 }
 
-/*-------------------------------- Tell Time 1 Funtion ------------------------------*/ 
+/*--------------------------- Greet User Funtion ------------------------------------*/
 
-const tellTime_1 = () =>{
+const greetUser = () => {
+    let user = prompt("please enter your name");
+
+    if (!user) {
+        alert("please enter your name");
+        return;
+    }
+
+    let greetMsg = `Have a good day ${user}`;
+
+    showOutput(greetMsg);
+}
+/*-------------------------------- Tell Time 1 Funtion ------------------------------*/
+
+const tellTime_1 = () => {
     let now = new Date();
 
     let time = now.toLocaleTimeString()
@@ -104,9 +118,9 @@ const tellTime_1 = () =>{
 
     showOutput(html);
 }
-/*-------------------------------- Tell Time 2 Funtion ------------------------------*/ 
+/*-------------------------------- Tell Time 2 Funtion ------------------------------*/
 
-const tellTime_2 = () =>{
+const tellTime_2 = () => {
     let now = new Date();
 
     let time = now.toLocaleTimeString()
@@ -115,9 +129,9 @@ const tellTime_2 = () =>{
 
     showOutput(html);
 }
-/*-------------------------------- Tell Time 3 Funtion ------------------------------*/ 
+/*-------------------------------- Tell Time 3 Funtion ------------------------------*/
 
-const tellTime_3 = () =>{
+const tellTime_3 = () => {
     let now = new Date();
 
     let time = now.toLocaleTimeString()
